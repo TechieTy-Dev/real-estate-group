@@ -46,6 +46,9 @@ const Banner = ({
 export default function Home({ propertiesForRent, propertiesForSale }) {
   return (
     <Box bgColor="#37435b">
+      <br />
+      <h1>Rental Properies in UAE</h1>
+      <br />
       <Banner
         purpose="RENT A HOME"
         title1="Rental Homes for"
@@ -55,12 +58,23 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         buttonText="Explore Renting"
         linkName="/search?purpose=for-rent"
         imageUrl="https://images.unsplash.com/photo-1523217582562-09d0def993a6"
+        alt="Prestine Apartments for Rent"
       />
+      <br />
+      <p class="wrap">
+        With a network of homes for sale worldwide, our website lets you search
+        property listings globally, and includes a large inventory of luxury
+        homes for sale, including houses, condos, townhomes, villas, and more
+      </p>
+      <br />
       <Flex flexWrap="wrap">
         {propertiesForRent.map((property) => (
           <Property property={property} key={property.id} />
         ))}
       </Flex>
+      <br />
+      <h1>Buy a Home in UAE</h1>
+      <br />
       <Banner
         purpose="BUY A HOME"
         title1="Own Your Luxurious"
@@ -70,7 +84,19 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         buttonText="Explore Buying"
         linkName="/search?purpose=for-sale"
         imageUrl="https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+        alt="Luxurious Home for Sale"
       />
+      <br />
+      <p className="wrap">
+        The properties for sale that are available in the Dubai market are
+        beautifully made and emphasise the luxury lifestyle that Dubai exudes.
+        Our expert luxury sales specialists can guide you through the whole
+        process from start to finish. You can choose from a selection of
+        apartments, villas, penthouses, lofts, and duplexes, and even purchase a
+        plot to create your dream home
+      </p>
+      <br />
+      <br />
       <Flex flexWrap="wrap">
         {propertiesForSale.map((property) => (
           <Property property={property} key={property.id} />

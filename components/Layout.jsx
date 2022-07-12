@@ -8,13 +8,23 @@ export default function Layout({ children }) {
 return(
   <>
   <Head>
-    <title>Real Estate</title>
+    <title>
+      UAE Real Estate Group</title>
+      <meta name="description" content="UAE Real Estate Group specialized in selling and renting luxorious Apartments, Condos, and Homes."/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8"/>
+
+      
   </Head>
   <Box maxWidth="1280px" m="auto">
     <header>
       <Navbar />
     </header>
-    <main>{children}</main>
+    <main>
+     
+      {children}
+      </main>
+    
     <footer>
       <Footer />
     </footer>

@@ -49,6 +49,9 @@ const PropertyDetails = ({
         {rooms}
         <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
       </Flex>
+      <br />
+      <br />
+      <p>This is a test paragraph</p>
     </Box>
     <Box marginTop="2">
       <Text fontSize="lg" marginBottom="2" fontWeight="bold">
@@ -58,6 +61,7 @@ const PropertyDetails = ({
         {description}
       </Text>
     </Box>
+    <br />
     <Flex
       flexWrap="wrap"
       textTransform="uppercase"
