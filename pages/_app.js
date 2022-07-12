@@ -25,6 +25,13 @@ function MyApp({ Component, pageProps }) {
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        <html lang="en" />
+        <meta
+          name="description"
+          content="UAE Real Estate Group specialized in selling and renting luxorious Apartments, Condos, and Homes."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
       </Head>
 
       <ChakraProvider>

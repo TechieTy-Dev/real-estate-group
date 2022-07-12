@@ -37,7 +37,12 @@ const PropertyDetails = ({
           AED {price} {rentFrequency && `/${rentFrequency}`}
         </Text>
         <Spacer />
-        <Avatar size="sm" src={agency?.logo?.url}></Avatar>
+        <Avatar
+          width="50px"
+          height="50px"
+          alt="Company Logo"
+          src={agency?.logo?.url}
+        ></Avatar>
       </Flex>
       <Flex
         alignItems="center"

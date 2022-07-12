@@ -21,8 +21,10 @@ p{
 .wrap{
   font-size: 16px;
   word-wrap: normal;
-  margin-left: 12em;
-  margin-right: 12em;
+  margin: auto;
+  justify-content: center;
+  width: 400px;
+  align-items: center;
   text-align: center;
 }
 

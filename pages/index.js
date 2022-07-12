@@ -95,7 +95,7 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
       <br />
       <p className="wrap">
         The properties for sale that are available in the Dubai market are
-        beautifully made and emphasise the luxury lifestyle that Dubai exudes.
+        beautifully made and emphasis the luxury lifestyle that Dubai exudes.
         Our expert luxury sales specialists can guide you through the whole
         process from start to finish. You can choose from a selection of
         apartments, villas, penthouses, lofts, and duplexes, and even purchase a
