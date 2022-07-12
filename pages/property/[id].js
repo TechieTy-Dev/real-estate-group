@@ -33,7 +33,7 @@ const PropertyDetails = ({
         <Box paddingRight="3" color="green.400">
           {isVerified && <GoVerified />}
         </Box>
-        <Text fontWeight="bold" fontSize="lg">
+        <Text fontWeight="bold" color="#202020" fontSize="lg">
           AED {price} {rentFrequency && `/${rentFrequency}`}
         </Text>
         <Spacer />
@@ -50,11 +50,9 @@ const PropertyDetails = ({
         <FaBed /> | {baths} <FaBath /> | {millify(area)} sqft <BsGridFill />
       </Flex>
       <br />
-      <br />
-      <p>This is a test paragraph</p>
     </Box>
     <Box marginTop="2">
-      <Text fontSize="lg" marginBottom="2" fontWeight="bold">
+      <Text fontSize="lg" color="#202020" marginBottom="2" fontWeight="bold">
         {title}
       </Text>
       <Text lineHeight="2" color="gray.600">
@@ -74,8 +72,10 @@ const PropertyDetails = ({
         borderColor="gray.100"
         p="3"
       >
-        <Text>Type</Text>
-        <Text fontWeight="bold">{type}</Text>
+        <Text color="#202020">Type</Text>
+        <Text fontWeight="bold" color="#202020">
+          {type}
+        </Text>
       </Flex>
       <Flex
         justifyContent="space-between"
@@ -84,8 +84,10 @@ const PropertyDetails = ({
         borderColor="gray.100"
         p="3"
       >
-        <Text>Purpose</Text>
-        <Text fontWeight="bold">{purpose}</Text>
+        <Text color="#202020">Purpose</Text>
+        <Text fontWeight="bold" color="#202020">
+          {purpose}
+        </Text>
       </Flex>
       {furnishingStatus && (
         <Flex
@@ -95,14 +97,16 @@ const PropertyDetails = ({
           borderColor="gray.100"
           p="3"
         >
-          <Text>Furnishing Status</Text>
-          <Text fontWeight="bold">{furnishingStatus}</Text>
+          <Text color="#202020">Furnishing Status</Text>
+          <Text fontWeight="bold" color="#202020">
+            {furnishingStatus}
+          </Text>
         </Flex>
       )}
     </Flex>
     <Box>
       {amenities.length && (
-        <Text fontSize="2xl" fontWeight="black" marginTop="5">
+        <Text color="#202020" fontSize="2xl" fontWeight="black" marginTop="5">
           Facilites:
         </Text>
       )}

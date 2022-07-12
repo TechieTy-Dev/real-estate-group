@@ -16,7 +16,13 @@ const Banner = ({
   imageUrl,
 }) => (
   <Flex flexWrap="wrap" justifyContent="center" p="10" alignItems="center">
-    <Image src={imageUrl} width={500} height={300} alt="Banner" />
+    <Image
+      src={imageUrl}
+      width={500}
+      height={300}
+      alt="Banner"
+      loading="lazy"
+    />
     <Box p="5">
       <Text color="white" fontSize="sm" fontWeight="medium">
         {purpose}
@@ -61,7 +67,7 @@ export default function Home({ propertiesForRent, propertiesForSale }) {
         alt="Prestine Apartments for Rent"
       />
       <br />
-      <p class="wrap">
+      <p className="wrap">
         With a network of homes for sale worldwide, our website lets you search
         property listings globally, and includes a large inventory of luxury
         homes for sale, including houses, condos, townhomes, villas, and more

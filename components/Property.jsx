@@ -16,7 +16,8 @@ const Property = ({property: { coverPhoto, price, rentFrequency, rooms, title, b
     color="white"
    justifyContent="flex-start" cursor="pointer">
       <Box>
-        <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} alt="Cover Photo of a Prestigious Apartment overlooking Dubai"/>
+        <Image src={coverPhoto ? coverPhoto.url : DefaultImage} 
+       loading="lazy" width={400} height={260} alt="Cover Photo of a Prestigious Apartment overlooking Dubai"/>
       </Box>
       <Box w="full">
         <Flex paddingTop="2" alignItems="center" justifyContent="space-between">
